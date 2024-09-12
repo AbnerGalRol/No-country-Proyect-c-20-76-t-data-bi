@@ -13,10 +13,11 @@ st.set_page_config(page_title='Datapp ML deployment',layout='centered')
 st.markdown(
     """
     <style>
-    body {
+    .stApp{
         background-color: #34495e;
         font-family: 'Arial', sans-serif;
     }
+    <style>
     """,
     unsafe_allow_html=True
 )
