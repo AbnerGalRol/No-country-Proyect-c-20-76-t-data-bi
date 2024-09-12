@@ -9,19 +9,6 @@ model = joblib.load('model/lgb_model.pkl')
 
 st.set_page_config(page_title='Datapp ML deployment',layout='centered')
 
-#css 
-st.markdown(
-    """
-    <style>
-    .stApp{
-        background-color: #34495e;
-        font-family: 'Arial', sans-serif;
-    }
-    <style>
-    """,
-    unsafe_allow_html=True
-)
-
 #Titulo
 st.title('Predicción de Éxito de tu Aplicación')
 
