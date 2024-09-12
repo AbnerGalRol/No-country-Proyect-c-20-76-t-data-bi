@@ -67,7 +67,7 @@ def main():
     new_df = df.copy()
     reverse_categories = {v: k for k, v in categories.items()}
     new_df['Category'] = new_df['Category'].map(reverse_categories)
-    new_df[['Free','Price','Ad Supported']] = new_df[['Free','Price','Ad Supported']].applymap(lambda x: 'Si' if x == 1 else 'No')
+    new_df[['Free','Ad Supported']] = new_df[['Free','Ad Supported']].applymap(lambda x: 'Si' if x == 1 else 'No')
     st.write(new_df)
 
 
